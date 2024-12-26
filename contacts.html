@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Sneaker Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SneakerShop</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Контакты</h1>
+        <p>Свяжитесь с нами по телефону: +1 (234) 567-890 или email: info@sneakershop.com</p>
+        
+        <form id="contactForm" action="submit_form.php" method="POST">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="surname">Фамилия:</label>
+            <input type="text" id="surname" name="surname" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    
+            <label for="gender">Пол:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Выберите...</option>
+                <option value="male">Мужчина</option>
+                <option value="female">Женщина</option>
+                <option value="other">Другое</option>
+            </select>
+    
+            <label for="subject">Тема:</label>
+            <input type="text" id="subject" name="subject" required>
+    
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 SneakerShop. Все права защищены.</p>
+            <p>Свяжитесь с нами: info@sneakershop.com</p>
+        </div>
+    </footer>
+</body>
+</html>

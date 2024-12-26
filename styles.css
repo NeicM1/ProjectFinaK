@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00509e;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #00509e;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+.gallery {
+    display: flex; /* Используем flexbox для расположения изображений в ряд */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    flex-wrap: wrap; /* Позволяем элементам переноситься на следующую строку при необходимости */
+}
+
+.gallery-item {
+    flex: 1 1 30%; /* Каждый элемент занимает 30% ширины контейнера */
+    margin: 10px; /* Отступы между элементами */
+    text-align: center; /* Центрируем текст под изображением */
+}
+
+.gallery-item img {
+    width: 100%; /* Изображения занимают 100% ширины родительского элемента */
+    height: 300px; /* Сохраняем пропорции изображений */
+    max-width: 300px; /* Ограничиваем максимальную ширину изображений */
+}
+
+.gallery-item p {
+    margin-top: 10px; /* Отступ сверху для текста */
+}
+
